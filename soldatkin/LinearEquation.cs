@@ -14,7 +14,7 @@ namespace soldatkin
         public double Solve(double a, double b)
         {
             if (a == 0)
-                return null;
+                throw new SoldatkinException("a can't be zero!");
 
             X = -b / a;
             return X;

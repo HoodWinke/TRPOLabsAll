@@ -20,7 +20,7 @@ namespace soldatkin
         private double[] CalculateSquareEquitation(double a, double b, double c)
         {
             if (a == 0)
-                return null;
+                throw new SoldatkinException("Equation not exist");
 
             double D = Discriminant(a, b, c);
 
