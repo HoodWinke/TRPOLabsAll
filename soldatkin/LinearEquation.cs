@@ -1,12 +1,14 @@
-﻿using System;
+﻿using core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using soldatkin;
 
-namespace TrpoLaba1
+namespace soldatkin
 {
-    class A
+   public class LinearEquation : ILinearEquation
     {
         public double X {get; set;}
         public double Solve(double a, double b)

@@ -1,14 +1,15 @@
-﻿using System;
+﻿using core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrpoLaba1
+namespace soldatkin
 {
-    class B : A
+    public class SquareEquation : IEquation
     {
-        ublic double[] Xs { get; set; }
+        public double[] Xs { get; set; }
 
         public double[] Solve(double a, double b, double c)
         {
@@ -19,7 +20,7 @@ namespace TrpoLaba1
         private double[] CalculateSquareEquitation(double a, double b, double c)
         {
             if (a == 0)
-                throw new SoldatkinException("Equation not exist");
+                return null;
 
             double D = Discriminant(a, b, c);
 
